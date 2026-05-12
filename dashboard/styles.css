@@ -1,0 +1,27 @@
+:root { --bg:#0f1115; --fg:#e6e6e6; --muted:#8b93a0; --accent:#ff8a3d; --row:#181c23; --row2:#13171d; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+header { display:flex; align-items:center; gap:1rem; padding:1rem 1.5rem; border-bottom:1px solid #222; }
+header h1 { margin:0; font-size:1.05rem; letter-spacing:.04em; }
+nav { display:flex; gap:.6rem; align-items:center; flex:1; flex-wrap:wrap; }
+nav a { color:var(--muted); text-decoration:none; padding:.35rem .6rem; border-radius:6px; }
+nav a:hover, nav a.active { color:var(--accent); background:#1a1d24; }
+select { background:#1a1d24; color:var(--fg); border:1px solid #333; padding:.3rem .5rem; border-radius:6px; }
+main { max-width:1100px; margin:0 auto; padding:1.25rem; }
+table { width:100%; border-collapse:collapse; margin:.5rem 0 1.5rem; }
+th, td { padding:.45rem .6rem; text-align:left; border-bottom:1px solid #222; }
+th { font-weight:600; color:var(--muted); font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; }
+tr:nth-child(even) td { background:var(--row2); }
+tr:nth-child(odd) td  { background:var(--row); }
+.num { text-align:right; font-variant-numeric:tabular-nums; }
+.h2 { font-size:1.1rem; margin:1.25rem 0 .5rem; }
+.tag { display:inline-block; background:#222; padding:.1rem .45rem; border-radius:999px; font-size:.72rem; color:var(--muted); margin-left:.4rem; }
+a.player, a.team { color:var(--accent); text-decoration:none; }
+a.player:hover, a.team:hover { text-decoration:underline; }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:.75rem; }
+.card { background:var(--row); padding:.75rem; border-radius:8px; border:1px solid #222; }
+.card h3 { margin:.1rem 0 .3rem; font-size:.95rem; }
+.card .meta { color:var(--muted); font-size:.78rem; }
+.kbd { background:#222; padding:.05rem .35rem; border-radius:4px; font:600 .8rem ui-monospace,monospace; color:#ddd; }
+footer { color:var(--muted); padding:1rem 1.5rem; border-top:1px solid #222; font-size:.78rem; }
+.empty { color:var(--muted); padding:2rem; text-align:center; }

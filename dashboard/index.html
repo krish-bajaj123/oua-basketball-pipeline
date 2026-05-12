@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OUA Basketball Dashboard</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>OUA Basketball</h1>
+  <nav>
+    <select id="gender">
+      <option value="MBB">Men</option>
+      <option value="WBB">Women</option>
+    </select>
+    <select id="season"><option value="2025-26">2025-26</option></select>
+    <a href="#standings">Standings</a>
+    <a href="#leaders">Leaders</a>
+    <a href="#teams">Teams</a>
+    <a href="#games">Games</a>
+  </nav>
+</header>
+<main id="view"></main>
+<footer>data: usportshoops.ca · pipeline: scraper → kafka → s3 → spark → postgres</footer>
+<script src="app.js"></script>
+</body>
+</html>
